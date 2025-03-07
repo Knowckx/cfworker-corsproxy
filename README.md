@@ -33,13 +33,15 @@ Note: Currently, this project only supports the `GET` method. For `POST` or othe
 
 ## Demo
 
-Suppose we want to request the URL `https://jsonplaceholder.typicode.com/posts`.
+Suppose we want to request the [URL](https://jsonplaceholder.typicode.com/posts)
 
-We can use the Worker's address as a proxy. The new URL format is `WorkerURL/?target={yourURL}`.
+We can use the Worker's address as a proxy.  
+The new URL format is `WorkerURL/?target={yourURL}`.
 
-Example: I have already created a worker on Cloudflare:
+Example: I have already created a worker on Cloudflare:  
+[https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts](https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts)
 
-`https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts`
+
 
 ## Running Locally
 
@@ -50,7 +52,9 @@ Example: I have already created a worker on Cloudflare:
 
 Method 1: Directly copy the code from `index.ts` into your Cloudflare Worker.
 
-Method 2: Refer to the official Cloudflare Workers tutorial (`npm create cloudflare`). Clone the project and then use `npm run deploy`.
+Method 2: Refer to the official Cloudflare Workers tutorial (`npm create cloudflare`).
+
+Clone the project and then use `npm run deploy`.
 
 ---
 <a name="中文版本"></a>
@@ -72,9 +76,9 @@ Method 2: Refer to the official Cloudflare Workers tutorial (`npm create cloudfl
 
 我们可以请求Woker的地址来中转，新的URL的格式 `WorkerURL/?target={yourURL}` 
 
-示例: 我在cloudflare上已经创建好了一个worker, 
-  
-`https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts`
+示例: 我在cloudflare上已经创建好了一个worker,   
+
+[https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts](https://cfworker-corsproxy.eniru2016.workers.dev/?target=https://jsonplaceholder.typicode.com/posts)
 
 ## 在本地启动
 
